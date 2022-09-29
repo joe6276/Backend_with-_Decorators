@@ -1,15 +1,16 @@
 export enum Methods{
-    get='get',
-    post='post',
-    delete='delete',
-    put='put',
-    patch='patch'
+    Get='get',
+    Post='post',
+    Delete='delete',
+    Put='put',
+    Patch='patch'
 }
 
 
 
 export enum Metadatakeys {
-    path='path',
-    method='method',
-    middleware="middleware"
+    Path='path',
+    Method='method',
+    Middleware="middleware",
+    Validators="validators"
 }
