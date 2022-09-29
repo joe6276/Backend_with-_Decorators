@@ -14,3 +14,11 @@ export enum Metadatakeys {
     Middleware="middleware",
     Validators="validators"
 }
+
+
+export interface Data{
+   name:string
+   email:string
+   iat: number,
+   exp: number
+}
