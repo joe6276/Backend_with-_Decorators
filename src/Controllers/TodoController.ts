@@ -11,9 +11,8 @@ function Logger(req:Request, res:Response, next:NextFunction){
     next()
     
 }
-@Controller('')
+@Controller('/')
 class TodoController {
-
 @get('/todo')
 @Use(JwtMiddleware)
 async getTodos(req:Request, res:Response){
