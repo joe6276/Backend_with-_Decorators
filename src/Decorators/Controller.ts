@@ -13,7 +13,6 @@ export function Controller(mainpath:string){
             const method:Methods= Reflect.getMetadata(Metadatakeys.Method, target.prototype, key)
             const middlewares = Reflect.getMetadata(Metadatakeys.Middleware, target.prototype,key)||[]
             const fields = Reflect.getMetadata(Metadatakeys.Validators,target.prototype , key)||[]
-
             const validator = Validator(fields)
           if(path &&  method ){
               router[method](`${mainpath}${path}`, middlewares, validator, routehandler)
