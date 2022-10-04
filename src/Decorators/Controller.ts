@@ -2,7 +2,7 @@ import 'reflect-metadata'
 import { Validator } from '../Helpers/Validators'
 import { AppRouter } from '../Router/AppRouter'
 import { Metadatakeys, Methods } from './Method'
-export function Controller(mainpath:string){
+export function Controller(mainpath:string):ClassDecorator{
     return function (target:Function){
     const router=AppRouter.getInstance()
           const parent=Object.getOwnPropertyNames(target.prototype)
